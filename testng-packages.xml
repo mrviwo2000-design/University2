@@ -1,0 +1,29 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Packages Tests Suite" verbose="1">
+    <test name="All Calculator Tests">
+        <packages>
+            <package name="test.*"/>
+        </packages>
+    </test>
+
+    <test name="Specific Methods Tests">
+        <classes>
+            <class name="test.AppTest">
+                <methods>
+                    <include name="testAdd"/>
+                    <include name="testSubtract"/>
+                    <include name="testMultiply"/>
+                    <include name="testDivide"/>
+                    <include name="testDivideByZero"/>
+                </methods>
+            </class>
+            <class name="test.MathTest">
+                <methods>
+                    <include name="testGcd"/>
+                    <include name="testLcm"/>
+                    <include name="testIsEven"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

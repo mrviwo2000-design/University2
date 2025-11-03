@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Groups Tests Suite" verbose="1">
+    <test name="Advanced Math Tests">
+        <groups>
+            <run>
+                <include name="advanced"/>
+                <include name="math"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.AppTest"/>
+            <class name="test.MathTest"/>
+        </classes>
+    </test>
+
+    <test name="Exception Tests">
+        <groups>
+            <run>
+                <include name="exceptions"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="test.AppTest"/>
+            <class name="test.MathTest"/>
+        </classes>
+    </test>
+</suite>
