@@ -15,7 +15,7 @@ public class MathTest {
 
     private MathApp mathUtils;
 
-    @BeforeMethod(groups = {"utils", "advanced"})
+    @BeforeMethod(groups = {"utils", "advanced","exceptions"})
     public void setUp() {
         mathUtils = new MathApp();
     }
@@ -84,4 +84,5 @@ public class MathTest {
         System.out.println("Тестирование генерации Фибоначчи с невалидным количеством");
         mathUtils.generateFibonacci(0);
     }
+
 }
