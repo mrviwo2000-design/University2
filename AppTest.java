@@ -13,7 +13,7 @@ public class AppTest {
 
     private App calculator;
 
-    @BeforeMethod(groups = {"basic", "arithmetic", "advanced"})
+    @BeforeMethod(groups = {"basic", "arithmetic", "advanced","exceptions"})
     public void setUp() {
         calculator = new App();
     }
@@ -135,4 +135,5 @@ public class AppTest {
         System.out.println("Тестирование конвертации: " + celsius + "°C -> " + expectedFahrenheit + "°F");
         Assert.assertEquals(calculator.celsiusToFahrenheit(celsius), expectedFahrenheit, 0.01);
     }
+
 }
